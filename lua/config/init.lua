@@ -6,3 +6,5 @@ require("config.clipboard")
 require("config.plugin-manager")
 require("config.autocmds")
 require("config.keymaps")
+-- Themery.nvim
+require("config.themery")
