@@ -1,3 +1,9 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+--[[
 ---@type table
 local dependencies = {
     "MunifTanjim/nui.nvim",
@@ -49,3 +55,4 @@ local spec = {
 }
 
 return spec
+]]
