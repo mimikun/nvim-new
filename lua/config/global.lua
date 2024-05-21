@@ -46,10 +46,9 @@ end
 ---@type boolean
 global.is_human_rights = is_human_rights
 
--- TODO: FIX
----@type string
+---@type string|string[]|nil
 local vim_path = vim.fn.stdpath("config")
----@type string
+---@type string|string[]|nil
 global.vim_path = vim_path
 
 -- NOTE:
@@ -63,14 +62,13 @@ local path_sep = is_windows and string.rep(path_sep_char, 2) or path_sep_char
 ---@type string
 global.path_sep = path_sep
 
--- TODO: FIX
----@type string
+---@type string|nil
 local home = vim.uv.os_homedir()
----@type string
+---@type string|nil
 global.home = home
 
 ---@type string
-global.cache_dir = table.concat({ home, ".cache", "nvim" }, path_sep)
+global.cache_dir = vim.fn.stdpath("cache")
 
 ---@type string
 global.plugins_dir = table.concat({ vim_path, "plugins" }, path_sep)
@@ -80,5 +78,11 @@ global.snippets_dir = table.concat({ vim_path, "snippets" }, path_sep)
 
 ---@type string
 global.data_dir = string.format("%s/site", vim.fn.stdpath("data"))
+
+---@type string
+global.themery_config = table.concat({ vim.fs.normalize(vim_path), "lua", "config", "themery.lua" }, path_sep)
+
+---@type string
+global.huez_config = table.concat({ vim.fs.normalize(vim_path), ".nvim.huez.lua" }, path_sep)
 
 return global

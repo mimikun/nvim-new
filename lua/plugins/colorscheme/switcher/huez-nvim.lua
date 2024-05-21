@@ -1,5 +1,3 @@
-local huez_config = vim.fs.normalize(vim.fn.stdpath("config")) .. "/.nvim.huez.lua"
-
 ---@type table
 local huez_omit_themes = {
     "default",
@@ -36,7 +34,7 @@ local spec = {
         local huez_api = require("huez.api")
 
         huez.setup({
-            file_path = huez_config,
+            file_path = require("config.global").huez_config,
             fallback = "default",
             omit = huez_omit_themes,
             picker = "telescope",

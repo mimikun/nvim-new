@@ -1,1 +1,1 @@
-github_dark
+github_dark_colorblind

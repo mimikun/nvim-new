@@ -6,5 +6,11 @@ require("config.clipboard")
 require("config.plugin-manager")
 require("config.autocmds")
 require("config.keymaps")
--- Themery.nvim
-require("config.themery")
+-- Set colorscheme
+if require("config.settings").use_theme_switcher == "themery" then
+    -- themery
+    require("config.themery")
+else
+    local colorscheme = require("huez.api").get_colorscheme()
+    vim.cmd("colorscheme " .. colorscheme)
+end

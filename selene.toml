@@ -1,4 +1,5 @@
 std = "vim+package"
+exclude = [".nvim.huez.lua"]
 
 [lints]
 global_usage = "allow"

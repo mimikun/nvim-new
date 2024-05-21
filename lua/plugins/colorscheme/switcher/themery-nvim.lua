@@ -1,7 +1,3 @@
--- TODO:
-
-local themery_config = vim.fs.normalize(vim.fn.stdpath("config")) .. "/lua/config/themery.lua"
-
 ---@type table
 local themery_selectables = {
     -- Lua themes
@@ -136,7 +132,7 @@ local spec = {
     cmd = "Themery",
     opts = {
         themes = themery_selectables,
-        themeConfigFile = themery_config,
+        themeConfigFile = require("config.global").themery_config,
         livePreview = true,
     },
     --cond = false,

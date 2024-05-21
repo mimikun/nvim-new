@@ -9,4 +9,7 @@ settings["use_ai_assistant"] = false
 ---@type boolean
 settings["use_denops"] = false
 
+--settings["use_theme_switcher"] = "themery"
+settings["use_theme_switcher"] = "huez"
+
 return settings

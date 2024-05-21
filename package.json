@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "prettier": "3.2.5",
+    "textlint": "^14.0.4",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.1"
+  },
+  "scripts": {
+    "textlint": "textlint --cache ./*.md",
+    "lint:prettier": "prettier --check .",
+    "fmt:prettier": "prettier --write ."
+  }
+}

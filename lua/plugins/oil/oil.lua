@@ -1,5 +1,5 @@
----@type LazySpec[]
-local deps = {
+---@type table
+local dependencies = {
     "nvim-tree/nvim-web-devicons",
     "refractalize/oil-git-status.nvim",
 }
@@ -173,8 +173,7 @@ local spec = {
     "stevearc/oil.nvim",
     lazy = false,
     cmd = "Oil",
-    --event = "VeryLazy",
-    dependencies = deps,
+    dependencies = dependencies,
     init = function()
         vim.g.loaded_netrw = 1
         vim.g.loaded_netrwPlugin = 1
