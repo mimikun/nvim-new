@@ -1,3 +1,9 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+--[[
 local global = require("core.global")
 
 ---@type string
@@ -32,3 +38,4 @@ local spec = {
 }
 
 return spec
+]]

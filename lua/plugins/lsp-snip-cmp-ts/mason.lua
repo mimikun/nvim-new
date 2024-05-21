@@ -1,3 +1,9 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+--[[
 local global = require("core.global")
 --local settings = require("core.settings")
 local iconsets = require("utils.icons")
@@ -230,3 +236,4 @@ local spec = {
 }
 
 return spec
+]]
