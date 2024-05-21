@@ -1,3 +1,9 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+--[[
 ---@type LazySpec
 local spec = {
     "nvim-orgmode/orgmode",
@@ -15,3 +21,4 @@ local spec = {
 }
 
 return spec
+]]
