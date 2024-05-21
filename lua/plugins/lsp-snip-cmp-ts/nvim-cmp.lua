@@ -1,3 +1,9 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+--[[
 ---@type table
 local dependencies = {
     "hrsh7th/cmp-nvim-lsp",
@@ -122,3 +128,4 @@ local spec = {
 }
 
 return spec
+]]

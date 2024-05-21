@@ -1,3 +1,9 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+--[[
 ---@type table
 local keymaps = {
     { "<space>e", desc = "vim.diagnostic.open_float" },
@@ -264,3 +270,4 @@ local spec = {
 }
 
 return spec
+]]
