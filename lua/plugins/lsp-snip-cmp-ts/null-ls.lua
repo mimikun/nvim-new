@@ -1,3 +1,9 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+--[[
 local global = require("core.global")
 local is_windows = global.is_windows
 
@@ -37,16 +43,14 @@ local spec = {
             hover.dictionary,
             hover.printenv,
             -- TODO: Fix checkhealth error
-            --[[
-            diagnostics.editorconfig_checker,
-            diagnostics.markdownlint,
-            diagnostics.textlint,
-            diagnostics.yamllint,
-            formatting.textlint,
-            formatting.markdownlint,
-            formatting.prettier,
-            formatting.yamlfmt,
-            ]]
+            --diagnostics.editorconfig_checker,
+            --diagnostics.markdownlint,
+            --diagnostics.textlint,
+            --diagnostics.yamllint,
+            --formatting.textlint,
+            --formatting.markdownlint,
+            --formatting.prettier,
+            --formatting.yamlfmt,
         }
         if is_windows then
             for i, v in ipairs(sources) do
@@ -62,3 +66,4 @@ local spec = {
 }
 
 return spec
+]]
