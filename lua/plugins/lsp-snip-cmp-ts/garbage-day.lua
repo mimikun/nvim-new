@@ -1,3 +1,9 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+--[[
 ---@type LazySpec
 local spec = {
     "zeioth/garbage-day.nvim",
@@ -9,3 +15,4 @@ local spec = {
 }
 
 return spec
+]]
