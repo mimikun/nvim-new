@@ -46,6 +46,11 @@ end
 ---@type boolean
 global.is_human_rights = is_human_rights
 
+---@type string|nil
+local app_name = vim.env.NVIM_APPNAME and vim.env.NVIM_APPNAME or "nvim"
+---@type string|nil
+global.app_name = app_name
+
 ---@type string|string[]|nil
 local vim_path = vim.fn.stdpath("config")
 ---@type string|string[]|nil
@@ -67,7 +72,7 @@ local home = vim.uv.os_homedir()
 ---@type string|nil
 global.home = home
 
----@type string
+---@type string|string[]|nil
 global.cache_dir = vim.fn.stdpath("cache")
 
 ---@type string
