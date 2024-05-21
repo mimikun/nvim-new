@@ -1,3 +1,9 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+--[[
 local global = require("core.global")
 local settings = require("core.settings")
 local is_linux = global.is_linux
@@ -110,3 +116,4 @@ local spec = {
 }
 
 return spec
+]]

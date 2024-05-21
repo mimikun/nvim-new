@@ -1,3 +1,10 @@
+local spec = {
+    -- TODO:
+}
+
+return spec
+
+--[[
 local keymaps = { "<space>m", "<space>j", "<space>s" }
 
 local cmds = {
@@ -46,3 +53,4 @@ local spec = {
 }
 
 return spec
+]]
