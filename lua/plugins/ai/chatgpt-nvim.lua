@@ -1,3 +1,16 @@
+---@type boolean
+local cond = require("config.settings").use_ai_assistant
+
+--[[
+NOTE: NEED IT:
+set -Ux OPENAI_API_KEY "foobar"
+set -Ux OPENAI_API_HOST "foobar"
+set -Ux OPENAI_API_TYPE "azure"
+set -Ux OPENAI_API_BASE "https://{your-resource-name}.openai.azure.com"
+set -Ux OPENAI_API_AZURE_ENGINE "chat"
+set -Ux OPENAI_API_AZURE_VERSION "2023-05-15"
+]]
+
 ---@type table
 local cmds = {
     "ChatGPT",
@@ -196,8 +209,7 @@ local spec = {
     event = "VeryLazy",
     dependencies = dependencies,
     opts = opts,
-    config = true,
-    cond = require("config.settings").use_ai_assistant,
+    cond = cond,
 }
 
 return spec

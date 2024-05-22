@@ -1,3 +1,11 @@
+---@type boolean
+local cond = vim.env.OBSIDIAN_REST_API_KEY ~= nil
+
+--[[
+NOTE: NEED IT:
+set -Ux OBSIDIAN_REST_API_KEY=<YOUR_API_KEY>
+]]
+
 ---@type table
 local dependencies = {
     "nvim-lua/plenary.nvim",
@@ -33,7 +41,7 @@ local spec = {
     event = events,
     dependencies = dependencies,
     opts = opts,
-    cond = false,
+    cond = cond,
 }
 
 return spec
