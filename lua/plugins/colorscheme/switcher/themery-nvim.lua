@@ -101,6 +101,10 @@ local themery_selectables = {
         name = "oldworld",
         colorscheme = "oldworld",
     },
+    {
+        name = "lackluster",
+        colorscheme = "lackluster",
+    }
     -- VimScript themes
     {
         name = "sonokai",
