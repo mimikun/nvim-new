@@ -10,7 +10,4 @@ require("config.keymaps")
 if require("config.settings").use_theme_switcher == "themery" then
     -- themery
     require("config.themery")
-else
-    local colorscheme = require("huez.api").get_colorscheme()
-    vim.cmd("colorscheme " .. colorscheme)
 end

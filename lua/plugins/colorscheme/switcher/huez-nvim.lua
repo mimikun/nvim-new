@@ -1,6 +1,5 @@
 ---@type table
-local huez_omit_themes = {
-    "default",
+local huez_exclude_themes = {
     "desert",
     "evening",
     "industry",
@@ -21,29 +20,51 @@ local huez_omit_themes = {
     "elflord",
     "habamax",
     "lunaperche",
+    "zaibatsu",
+    "wildcharm",
+    "sorbet",
+    "vim",
+}
+
+---@type table
+local opts = {
+    path = vim.fs.normalize(vim.fn.stdpath("data")) .. "/huez",
+    fallback = "default",
+    exclude = huez_exclude_themes,
+    picker = {
+        themes = {
+            layout = "right",
+            opts = {},
+        },
+        favorites = {
+            layout = "right",
+            opts = {},
+        },
+        live = {
+            layout = "right",
+            opts = {},
+        },
+        ensured = {
+            layout = "right",
+            opts = {},
+        },
+    },
+}
+
+---@type table
+local cmds = {
+    "Huez",
+    "HuezEnsured",
+    "HuezLive",
+    "HuezFavorites",
 }
 
 ---@type LazySpec
 local spec = {
     "vague2k/huez.nvim",
-    --lazy = false,
-    cmd = "Huez",
-    dependencies = { "nvim-telescope/telescope.nvim" },
-    config = function()
-        local huez = require("huez")
-        local huez_api = require("huez.api")
-
-        huez.setup({
-            file_path = require("config.global").huez_config,
-            fallback = "default",
-            omit = huez_omit_themes,
-            picker = "telescope",
-            picker_opts = require("telescope.themes").get_dropdown({}),
-        })
-        local colorscheme = huez_api.get_colorscheme()
-        vim.cmd("colorscheme " .. colorscheme)
-    end,
-    --cond = false,
+    lazy = false,
+    cmd = cmds,
+    opts = opts,
 }
 
 return spec
