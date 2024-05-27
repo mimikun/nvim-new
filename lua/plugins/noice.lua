@@ -1,9 +1,3 @@
-local spec = {
-    -- TODO:
-}
-
-return spec
---[[
 ---@type table
 local dependencies = {
     "MunifTanjim/nui.nvim",
@@ -39,14 +33,13 @@ local opts = {
 
 ---@type LazySpec
 local spec = {
-    -- TODO: setting
     "folke/noice.nvim",
     --lazy = false,
     event = "VeryLazy",
     dependencies = dependencies,
     opts = opts,
     config = function()
-        require("noice").setup({})
+        require("noice").setup()
         require("notify").setup({
             background_colour = "#000000",
         })
@@ -55,4 +48,3 @@ local spec = {
 }
 
 return spec
-]]
