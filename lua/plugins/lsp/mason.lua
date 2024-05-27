@@ -100,13 +100,8 @@ local spec = {
     dependencies = dependencies,
     config = function()
         local mason = require("mason")
-        local mason_lspconfig = require("mason-lspconfig")
-        local mason_lock = require("mason-lock")
         local lspconfig = require("lspconfig")
         local configs = require("lspconfig.configs")
-        local cmp_nvim_lsp = require("cmp_nvim_lsp")
-        local neoconf = require("neoconf")
-        local neodev = require("neodev")
 
         ---@param names string[]
         ---@return string[]
@@ -138,7 +133,7 @@ local spec = {
         local handlers = {
             function(server_name)
                 lspconfig[server_name].setup({
-                    capabilities = cmp_nvim_lsp.default_capabilities(),
+                    capabilities = require("cmp_nvim_lsp").default_capabilities(),
                 })
             end,
 
@@ -201,8 +196,9 @@ local spec = {
             }
         end
 
-        neoconf.setup({})
-        neodev.setup({})
+        require("neoconf").setup({})
+        require("neodev").setup({})
+
         mason.setup({
             max_concurrent_installers = concurrency,
             ui = {
@@ -217,12 +213,15 @@ local spec = {
                 },
             },
         })
-        mason_lspconfig.setup({
+
+        require("mason-lspconfig").setup({
             ensure_installed = lsp_servers,
             handlers = handlers,
         })
+
         lspconfig.fish_lsp.setup({})
-        mason_lock.setup({
+
+        require("mason-lock").setup({
             lockfile_path = mason_lockfile,
         })
     end,
