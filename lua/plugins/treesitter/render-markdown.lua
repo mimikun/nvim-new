@@ -116,10 +116,7 @@ local spec = {
     --lazy = false,
     cmd = "RenderMarkdownToggle",
     dependencies = { "nvim-treesitter/nvim-treesitter" },
-    config = function()
-        local render_markdown = require("render-markdown")
-        render_markdown.setup(opts)
-    end,
+    opts = opts,
     --cond = false,
 }
 
