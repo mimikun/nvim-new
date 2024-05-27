@@ -1,6 +1,5 @@
 ---@type boolean
 local enabled = vim.fn.has("nvim-0.10.0") == 1
-enabled = false
 
 ---@type table
 local opts = {
