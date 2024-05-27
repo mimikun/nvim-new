@@ -67,7 +67,7 @@ local events = { "BufReadPost", "BufNewFile" }
 ---@type LazySpec
 local spec = {
     "folke/todo-comments.nvim",
-    --lazy = false,
+    lazy = false,
     event = events,
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = opts,
