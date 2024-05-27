@@ -1,11 +1,5 @@
-local spec = {
-    -- TODO:
-}
-
-return spec
---[[
-local global = require("core.global")
---local settings = require("core.settings")
+local global = require("config.global")
+--local settings = require("config.settings")
 local iconsets = require("utils.icons")
 
 --local lsp_servers = settings["lsp_servers"]
@@ -236,4 +230,3 @@ local spec = {
 }
 
 return spec
-]]

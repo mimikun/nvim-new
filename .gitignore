@@ -3,3 +3,4 @@ node_modules
 .textlintcache
 dotfyle.json
 *.patch
+mason-lock.json
