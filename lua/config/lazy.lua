@@ -23,8 +23,8 @@ require("lazy").setup({
     lazy = true, 
   },
   spec = {
-    { import = "colorschemes" },
     { import = "plugins" },
+    { import = "colorschemes" },
   },
   lockfile = vim.fn.stdpath("config") .. "/lazy-lock.json",
   ---@type number? limit the maximum amount of concurrent tasks

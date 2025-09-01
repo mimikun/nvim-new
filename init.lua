@@ -2,6 +2,7 @@ if vim.loader then
   vim.loader.enable()
 end
 
+vim.opt.termguicolors = true
 vim.opt.mouse = "a"
 vim.opt.fileformats = {
   "unix",

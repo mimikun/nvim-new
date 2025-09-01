@@ -2,7 +2,7 @@
 local opts = {
   options = {
     compile_path = vim.fn.stdpath("cache") .. "/nightfox",
-    transparent = false, -- Disable setting background
+    transparent = vim.g.transparent_enabled,
     dim_inactive = false, -- Non focused panes set to alternative background
     colorblind = {
       enable = false, -- Enable colorblind support

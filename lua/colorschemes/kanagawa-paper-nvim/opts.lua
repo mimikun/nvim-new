@@ -2,7 +2,7 @@
 local opts = {
   ---@type string "auto" | "ink" | "canvas"
   _theme = "auto",
-  transparent = false,
+  transparent = vim.g.transparent_enabled,
   gutter = false,
   dim_inactive = false,
   cache = true,

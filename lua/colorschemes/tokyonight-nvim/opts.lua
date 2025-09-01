@@ -2,7 +2,7 @@
 local opts = {
   style = "moon", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
   light_style = "day", -- The theme is used when the background is set to light
-  transparent = false, -- Enable this to disable setting the background color
+  transparent = vim.g.transparent_enabled,
   styles = {
     comments = { italic = true },
     keywords = { italic = true },

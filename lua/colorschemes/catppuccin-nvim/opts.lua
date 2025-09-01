@@ -9,9 +9,9 @@ local opts = {
     dark = "mocha",
   },
   compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
-  transparent_background = false,
+  transparent_background = vim.g.transparent_enabled,
   float = {
-    transparent = false,
+    transparent = vim.g.transparent_enabled,
     solid = false,
   },
   show_end_of_buffer = false,

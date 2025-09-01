@@ -2,7 +2,7 @@
 local opts = {
   ---@type string "default" | "highContrast"
   style = "default",
-  transparent = false,
+  transparent = vim.g.transparent_enabled,
   styles = {
     comments = { italic = true },
     keywords = { italic = true },
