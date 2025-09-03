@@ -20,7 +20,7 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   root = vim.fn.stdpath("data") .. "/lazy",
   defaults = {
-    lazy = true, 
+    lazy = true,
   },
   spec = {
     { import = "plugins" },
@@ -60,7 +60,7 @@ require("lazy").setup({
     -- The backdrop opacity. 0 is fully opaque, 100 is fully transparent.
     backdrop = 60,
     ---@type string "center" | "left" | "right"
-    title_pos = "center", 
+    title_pos = "center",
     icons = {
       cmd = " ",
       config = "",
