@@ -1,0 +1,58 @@
+---@type table
+local opts = {
+  force_exit_insert_mode = false,
+  disabled_filetypes = {
+    ["aerial"] = true,
+    ["alpha"] = true,
+    ["Avante"] = true,
+    ["checkhealth"] = true,
+    ["copilot-chat"] = true,
+    ["dapui.*"] = true,
+    ["db.*"] = true,
+    ["Diffview.*"] = true,
+    ["Dressing.*"] = true,
+    ["fugitive"] = true,
+    ["help"] = true,
+    ["httpResult"] = true,
+    ["lazy"] = true,
+    ["lspinfo"] = true,
+    ["man"] = true,
+    ["mason"] = true,
+    ["minifiles"] = true,
+    ["Neogit.*"] = true,
+    ["neo%-tree.*"] = true,
+    ["neotest%-summary"] = true,
+    ["netrw"] = true,
+    ["noice"] = true,
+    ["notify"] = true,
+    ["NvimTree"] = true,
+    ["oil"] = true,
+    ["prompt"] = true,
+    ["qf"] = true,
+    ["query"] = true,
+    ["snacks_dashboard"] = true,
+    ["TelescopePrompt"] = true,
+    ["Trouble"] = true,
+    ["trouble"] = true,
+    ["VoltWindow"] = true,
+    ["undotree"] = true,
+  },
+  ui = {
+    enter = true,
+    focusable = true,
+    border = {
+      style = "rounded",
+      text = {
+        top = "Hardtime Report",
+        top_align = "center",
+      },
+    },
+    position = "50%",
+    size = {
+      width = "40%",
+      height = "60%",
+    },
+  },
+}
+
+return opts
