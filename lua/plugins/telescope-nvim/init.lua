@@ -14,6 +14,10 @@ local spec = {
           ---@type string "smart_case" | "ignore_case" | "respect_case"
           case_mode = "smart_case",
         },
+        smart_open = {
+          show_scores = false,
+          match_algorithm = "fzf",
+        },
       },
     })
 
