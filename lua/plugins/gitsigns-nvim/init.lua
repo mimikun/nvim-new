@@ -4,7 +4,11 @@ local spec = {
   --lazy = false,
   cmd = "Gitsigns",
   event = "BufEnter",
-  opts = require("plugins.gitsigns-nvim.opts"),
+  dependencies = { "petertriho/nvim-scrollbar" },
+  config = function()
+    require("gitsigns").setup(require("plugins.gitsigns-nvim.opts"))
+    --require("scrollbar.handlers.gitsigns").setup()
+  end,
   --cond = false,
   --enabled = false,
 }
