@@ -9,8 +9,8 @@ local spec = {
   config = function()
     require("telescope").load_extension("orgmode")
   end,
-  --cond = false,
-  --enabled = false,
+  cond = false,
+  enabled = false,
 }
 
 return spec

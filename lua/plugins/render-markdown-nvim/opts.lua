@@ -2,7 +2,7 @@
 ---@type render.md.UserConfig
 local opts = {
   -- Whether markdown should be rendered by default.
-  enabled = true,
+  enabled = false,
   -- Vim modes that will show a rendered view of the markdown file, :h mode(), for all enabled
   -- components. Individual components can be enabled for other modes. Remaining modes will be
   -- unaffected by this plugin.

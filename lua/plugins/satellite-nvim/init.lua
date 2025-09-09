@@ -4,9 +4,10 @@ local spec = {
   --lazy = false,
   cmd = require("plugins.satellite-nvim.cmds"),
   event = "VeryLazy",
+  dependencies = { "lewis6991/gitsigns.nvim" },
   opts = require("plugins.satellite-nvim.opts"),
-  --cond = false,
-  --enabled = false,
+  cond = false,
+  enabled = false,
 }
 
 return spec

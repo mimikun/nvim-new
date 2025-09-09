@@ -54,8 +54,8 @@ local spec = {
     fuzzy = { implementation = "prefer_rust_with_warning" },
   },
   opts_extend = { "sources.default" },
-  --cond = false,
-  --enabled = false,
+  cond = false,
+  enabled = false,
 }
 
 return spec
