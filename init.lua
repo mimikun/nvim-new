@@ -25,7 +25,12 @@ vim.g.loaded_python3_provider = 0
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_node_provider = 0
 vim.opt.clipboard = "unnamedplus"
+vim.g.mapleader = " "
 
 require("config.lazy")
 
 vim.cmd.colorscheme("tokyonight")
+
+vim.keymap.set("n", "<Esc><Esc>", function()
+  vim.cmd("nohlsearch")
+end, { silent = true })
