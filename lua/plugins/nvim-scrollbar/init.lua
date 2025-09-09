@@ -6,8 +6,8 @@ local spec = {
   event = "VeryLazy",
   dependencies = require("plugins.nvim-scrollbar.dependencies"),
   opts = require("plugins.nvim-scrollbar.opts"),
-  cond = false,
-  enabled = false,
+  --cond = false,
+  --enabled = false,
 }
 
 return spec
