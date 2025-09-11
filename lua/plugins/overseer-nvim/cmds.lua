@@ -1,0 +1,18 @@
+---@type table
+local cmds = {
+  "OverseerOpen",
+  "OverseerClose",
+  "OverseerToggle",
+  "OverseerSaveBundle",
+  "OverseerLoadBundle",
+  "OverseerDeleteBundle",
+  "OverseerRunCmd",
+  "OverseerRun",
+  "OverseerInfo",
+  "OverseerBuild",
+  "OverseerQuickAction",
+  "OverseerTaskAction",
+  "OverseerClearCache",
+}
+
+return cmds
