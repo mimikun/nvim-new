@@ -28,6 +28,13 @@ tasks:
       - git pull
     silent: true
 
+  push:
+    desc: git push
+    cmds:
+      - git push origin master
+      - git push codeberg master
+    silent: true
+
   clean-fetch:
     desc: git cleanfetch
     aliases:
