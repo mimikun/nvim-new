@@ -22,6 +22,12 @@ tasks:
       - echo "WIP"
     silent: true
 
+  pull:
+    desc: git pull
+    cmds:
+      - git pull
+    silent: true
+
   clean-fetch:
     desc: git cleanfetch
     aliases:
@@ -45,7 +51,7 @@ tasks:
     cmds:
       - task: clean-fetch
       - task: delete-branch
-      - git pull
+      - task: pull
       - task: patch-branch
     silent: true
 
