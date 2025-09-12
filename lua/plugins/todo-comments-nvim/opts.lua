@@ -28,6 +28,12 @@ local opts = {
       alt = { "TESTING", "PASSED", "FAILED" },
     },
   },
+  highlight = {
+    multiline = false,
+    comments_only = true,
+    max_line_len = 400,
+    exclude = {},
+  },
 }
 
 return opts
