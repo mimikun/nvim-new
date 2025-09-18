@@ -6,8 +6,12 @@ local spec = {
   keys = require("plugins.aerial-nvim.keys"),
   dependencies = require("plugins.aerial-nvim.dependencies"),
   config = function()
-    require("aerial").setup(require("plugins.aerial-nvim.opts"))
-    require("telescope").load_extension("aerial")
+    local telescope = require("telescope")
+
+    require("aerial").setup(require("plugins.aerial-nvim.opts.aerial"))
+
+    telescope.setup(require("plugins.aerial-nvim.opts.telescope"))
+    telescope.load_extension("aerial")
   end,
   cond = false,
   enabled = false,

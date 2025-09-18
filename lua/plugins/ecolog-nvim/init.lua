@@ -8,8 +8,12 @@ local spec = {
   event = "VeryLazy",
   dependencies = { "nvim-telescope/telescope.nvim" },
   config = function()
-    require("ecolog").setup(require("plugins.ecolog-nvim.opts"))
-    require("telescope").load_extension("ecolog")
+    local telescope = require("telescope")
+
+    require("ecolog").setup(require("plugins.ecolog-nvim.opts.ecolog"))
+
+    telescope.setup(require("plugins.ecolog-nvim.opts.telescope"))
+    telescope.load_extension("ecolog")
   end,
   --cond = false,
   --enabled = false,
