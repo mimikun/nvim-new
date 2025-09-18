@@ -6,7 +6,8 @@ local opts = {
   ---@type lazydev.Library.spec[]
   library = {
     --"~/projects/my-awesome-lib",
-    "lazy.nvim",
+    { "lazy.nvim" },
+    { "nvim-dap-ui" },
     { path = "${3rd}/luv/library", words = { "vim%.uv" } },
     { path = "LazyVim", words = { "LazyVim" } },
     { path = "wezterm-types", mods = { "wezterm" } },
