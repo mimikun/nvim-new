@@ -1,7 +1,7 @@
 ---@type LazyKeysSpec[]
 local keys = {
   {
-    "<leader>ff",
+    "<leader>Ff",
     function()
       require("telescope.builtin").find_files()
     end,
@@ -9,7 +9,7 @@ local keys = {
     mode = "n",
   },
   {
-    "<leader>fg",
+    "<leader>Fg",
     function()
       require("telescope.builtin").live_grep()
     end,
@@ -17,7 +17,7 @@ local keys = {
     mode = "n",
   },
   {
-    "<leader>fb",
+    "<leader>Fb",
     function()
       require("telescope.builtin").buffers()
     end,
@@ -25,7 +25,7 @@ local keys = {
     mode = "n",
   },
   {
-    "<leader>fh",
+    "<leader>Fh",
     function()
       require("telescope.builtin").help_tags()
     end,
