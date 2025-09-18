@@ -4,6 +4,7 @@ end
 
 vim.opt.termguicolors = true
 vim.opt.mouse = "a"
+vim.opt.mousemoveevent = true
 vim.opt.fileformats = {
   "unix",
   "dos",
