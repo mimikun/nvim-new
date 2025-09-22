@@ -7,7 +7,7 @@ local builds = {
 ---@type LazySpec
 local spec = {
   "nvim-telescope/telescope-fzf-native.nvim",
-  build = builds.cmake,
+  build = builds.make,
   --lazy = false,
   --cond = false,
   --enabled = false,
