@@ -5,6 +5,7 @@ local opts = {
   max_concurrent_installers = 4,
   registries = {
     "github:mason-org/mason-registry",
+    "github:Crashdummyy/mason-registry",
   },
   ui = {
     -- The border to use for the UI window. Accepts same border values as |nvim_open_win()|.
