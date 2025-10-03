@@ -7,8 +7,8 @@ local spec = {
   --event = "VeryLazy",
   dependencies = { "nvim-telescope/telescope.nvim" },
   opts = require("plugins.kanban-nvim.opts"),
-  cond = false,
-  enabled = false,
+  --cond = false,
+  --enabled = false,
 }
 
 return spec
