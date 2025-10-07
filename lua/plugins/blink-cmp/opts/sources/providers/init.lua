@@ -32,6 +32,7 @@ local providers = {
   sshconfig = require("plugins.blink-cmp.opts.sources.providers.sshconfig"),
   words_dictionary = require("plugins.blink-cmp.opts.sources.providers.words_dictionary"),
   thesaurus = require("plugins.blink-cmp.opts.sources.providers.thesaurus"),
+  calc = require("plugins.blink-cmp.opts.sources.providers.calc"),
   -- NOTE: using blink.compat providers
   cmp_dbee = require("plugins.blink-cmp.opts.sources.providers.dbee"),
 }

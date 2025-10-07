@@ -14,6 +14,7 @@ local default = {
   --"ripgrep",
   "tmux",
   "wezterm",
+  "calc",
   -- NOTE: blink-compat sources
 }
 

@@ -34,6 +34,7 @@ local dependencies = {
   "alexandre-abrioux/blink-cmp-npm.nvim",
   "archie-judd/blink-cmp-words",
   { "bydlw98/blink-cmp-sshconfig", build = "make" },
+  "joelazar/blink-calc",
   --"nvim-orgmode/orgmode",
 }
 
