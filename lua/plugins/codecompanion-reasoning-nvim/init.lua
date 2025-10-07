@@ -1,6 +1,7 @@
 ---@type LazySpec
 local spec = {
-  "lazymaniac/codecompanion-reasoning.nvim",
+  --"lazymaniac/codecompanion-reasoning.nvim",
+  "mimikun/codecompanion-reasoning.nvim",
   --lazy = false,
   cmd = require("plugins.codecompanion-reasoning-nvim.cmds"),
   --event = "VeryLazy",
