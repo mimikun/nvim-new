@@ -1,0 +1,9 @@
+--return codesettings.with_vscode_settings("yamlls", {
+--  settings = {
+--    yaml = {
+--      validate = true,
+--      schemaStore = { enable = true },
+--      schemas = require("schemastore").yaml.schemas(),
+--    },
+--  },
+--})
