@@ -1,0 +1,33 @@
+---@type table
+local cmds = {
+  "RevmanAddNote",
+  "RevmanAddPR",
+  "RevmanAddRepo",
+  "RevmanDisableBackgroundSync",
+  "RevmanEnableBackgroundSync",
+  "RevmanListAuthors",
+  "RevmanListMergedPRs",
+  "RevmanListMyOpenPRs",
+  "RevmanListOpenPRs",
+  "RevmanListPRs",
+  "RevmanListPRsNeedingReview",
+  "RevmanListRepos",
+  "RevmanNudgePRs",
+  "RevmanReviewPR",
+  "RevmanSetStatus",
+  "RevmanSetStatusForCurrentPR",
+  "RevmanShowNotes",
+  "RevmanSyncAllPRs",
+  "RevmanSyncPR",
+  "SnacksRevmanAuthors",
+  "SnacksRevmanMergedPRs",
+  "SnacksRevmanMyOpenPRs",
+  "SnacksRevmanNotes",
+  "SnacksRevmanNudgePRs",
+  "SnacksRevmanOpenPRs",
+  "SnacksRevmanPRs",
+  "SnacksRevmanPRsNeedingReview",
+  "SnacksRevmanRepos",
+}
+
+return cmds

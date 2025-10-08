@@ -2,7 +2,6 @@
 local cmds = {
   "LspInstall",
   "LspUninstall",
-  --"PylspInstall",
 }
 
 return cmds
