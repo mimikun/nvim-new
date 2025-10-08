@@ -51,6 +51,19 @@ local opts = {
   },
   ---@type rustaceanvim.lsp.ClientOpts
   server = {
+    on_attach = function(client, bufnr)
+      local tcr = require("tree_climber_rust")
+
+      vim.api.nvim_buf_set_keymap(bufnr, "n", "s", function()
+        tcr.init_selection()
+      end, { noremap = true, silent = true })
+      vim.api.nvim_buf_set_keymap(bufnr, "x", "s", function()
+        tcr.select_incremental()
+      end, { noremap = true, silent = true })
+      vim.api.nvim_buf_set_keymap(bufnr, "x", "S", function()
+        tcr.select_previous()
+      end, { noremap = true, silent = true })
+    end,
     -- XXX: I want to use a mason.nvim installation anyway
     ---@type string[] | fun():(string[]|fun(dispatchers: vim.lsp.rpc.Dispatchers): vim.lsp.rpc.PublicClient)
     --cmd = function()

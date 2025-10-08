@@ -6,6 +6,7 @@ local spec = {
   ft = { "rust" },
   cmd = require("plugins.rustaceanvim.cmds"),
   --event = "VeryLazy",
+  dependencies = { "adaszko/tree_climber_rust.nvim" },
   init = function()
     vim.g.rustaceanvim = require("plugins.rustaceanvim.opts")
   end,
