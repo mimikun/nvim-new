@@ -56,6 +56,11 @@ local opts = {
     },
   },
   completion = {
+    crates = {
+      enabled = true,
+      min_chars = 3,
+      max_results = 8,
+    },
     text = {
       prerelease = "  pre-release ",
       yanked = "  yanked ",
@@ -77,10 +82,10 @@ local opts = {
     enabled = false,
   },
   lsp = {
-    enabled = false,
-    actions = false,
-    completion = false,
-    hover = false,
+    enabled = true,
+    actions = true,
+    completion = true,
+    hover = true,
   },
 }
 
