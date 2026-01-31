@@ -3,7 +3,6 @@ local spec = {
   "stevearc/oil.nvim",
   lazy = false,
   cmd = require("plugins.oil-nvim.cmds"),
-  --keys = require("plugins.oil-nvim.keys"),
   dependencies = require("plugins.oil-nvim.dependencies"),
   --opts = require("plugins.oil-nvim.opts"),
   config = function()
