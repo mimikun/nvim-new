@@ -1,6 +1,6 @@
 ---@type table
 local cmds = {
-    "Oil",
+  "Oil",
 }
 
 return cmds

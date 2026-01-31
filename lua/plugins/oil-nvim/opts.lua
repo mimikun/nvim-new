@@ -1,6 +1,6 @@
 ---@type table
 local opts = {
-    -- TODO: it
+  -- TODO: it
 }
 
 return opts

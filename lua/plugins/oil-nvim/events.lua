@@ -1,6 +1,6 @@
 ---@type table
 local events = {
-    -- TODO: it
+  -- TODO: it
 }
 
 return events
