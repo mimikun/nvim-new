@@ -10,12 +10,6 @@ local spec = {
     require("oil").setup(require("plugins.oil-nvim.opts"))
     vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
   end,
-  --main = ""
-  --pin = false,
-  --submodules = false,
-  --module = false,
-  --priority = 1000,
-  --optional = false,
   --cond = false,
   --enabled = false,
 }
