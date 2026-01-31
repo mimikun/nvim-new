@@ -233,19 +233,3 @@ local spec = {
 }
 
 return spec
-
---[[
-  ---@module 'oil'
-  ---@type oil.SetupOpts
-  opts = {},
-  -- Optional dependencies
-]]
-
---dir = ""
---url = ""
---name = ""
---dev = false
---build = "",
---branch = "",
---tag = "",
---commit = "",

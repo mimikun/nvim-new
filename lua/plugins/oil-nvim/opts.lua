@@ -1,4 +1,5 @@
----@type table
+---@module 'oil'
+---@type oil.SetupOpts
 local opts = {
   -- TODO: it
 }
