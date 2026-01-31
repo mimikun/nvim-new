@@ -4,17 +4,8 @@ local spec = {
   lazy = false,
   cmd = require("plugins.oil-nvim.cmds"),
   --keys = require("plugins.oil-nvim.keys"),
-  --event = require("plugins.oil-nvim.events"),
-  --event = "VeryLazy",
   dependencies = require("plugins.oil-nvim.dependencies"),
-  --init = function()
-  --    INIT
-  --end,
-  --opts = require("plugins.oil-nvim.opts"),
-  --opts = {},
-  --config = function()
-  --    INIT
-  --end,
+  opts = require("plugins.oil-nvim.opts"),
   config = function()
     require("oil").setup({
       -- Oil will take over directory buffers (e.g. `vim .` or `:e src/`)
